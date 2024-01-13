@@ -1,0 +1,11 @@
+TESTS:
+
+decorators:
+pytest [Путь к файлу test_decorators.py]
+python -m pytest -q [Путь к файлу test_decorators.py] --cov=decorators --cov-report html --cov-report term-missing
+
+
+
+pizza:
+pytest [Путь к файлу test_pizza.py]
+python -m pytest -q [Путь к файлу test_pizza.py] --cov=pizza --cov-report html --cov-report term-missing

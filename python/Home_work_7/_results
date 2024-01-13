@@ -1,0 +1,99 @@
+________________________________________________________________________________________________________________________
+
+ISSUE 1
+________________________________________________________________________________________________________________________
+
+ python -m doctest -o ELLIPSIS -v /Users/daniilsobolev/Desktop/Avito/AAA/python/Home_work/Home_work_7/test_encode.py
+
+Trying:
+    encode('  ') # doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    ' '
+ok
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode(30)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: 'int' object is not iterable
+ok
+1 items had no tests:
+    encode
+1 items passed all tests:
+   3 tests in encode.encode
+3 tests in 2 items.
+3 passed and 0 failed.
+Test passed.
+
+
+
+________________________________________________________________________________________________________________________
+
+ISSUE 2
+________________________________________________________________________________________________________________________
+
+pycharm - правой кнопкой - Run tests for ...
+
+============================= test session starts ==============================
+collecting ... collected 3 items
+
+issue2.py::test_decode[.- ...- .. - ----AVITO] PASSED                    [ 33%]
+issue2.py::test_decode[.- -.-. .- -.. . -- -.---ACADEMY] PASSED          [ 66%]
+issue2.py::test_decode[.- -. .- .-.. -.-- - .. -.-. ...-ANALYTICS] PASSED [100%]
+
+============================== 3 passed in 0.02s ===============================
+
+
+
+________________________________________________________________________________________________________________________
+
+ISSUE 3
+________________________________________________________________________________________________________________________
+
+pycharm - правой кнопкой - Run tests for ...
+
+============================= test session starts ==============================
+collecting ... collected 5 items
+
+issue3.py::TestFitTransform::test_moscow PASSED                          [ 20%]
+issue3.py::TestFitTransform::test_moscow_interception_error PASSED       [ 40%]
+issue3.py::TestFitTransform::test_moscow_new_york PASSED                 [ 60%]
+issue3.py::TestFitTransform::test_moscow_new_york_moscow PASSED          [ 80%]
+issue3.py::TestFitTransform::test_space PASSED                           [100%]
+
+============================== 5 passed in 0.02s ===============================
+
+
+
+________________________________________________________________________________________________________________________
+
+ISSUE 4
+________________________________________________________________________________________________________________________
+
+pycharm - правой кнопкой - Run tests for ...
+
+============================= test session starts ==============================
+collecting ... collected 5 items
+
+issue4.py::test_moscow PASSED                                            [ 20%]
+issue4.py::test_moscow_new_york PASSED                                   [ 40%]
+issue4.py::test_space PASSED                                             [ 60%]
+issue4.py::test_moscow_new_york_moscow PASSED                            [ 80%]
+issue4.py::test_moscow_interception_error PASSED                         [100%]
+
+============================== 5 passed in 0.03s ===============================
+
+
+
+________________________________________________________________________________________________________________________
+
+ISSUE 5
+________________________________________________________________________________________________________________________
+
+python -m pytest -q /Users/daniilsobolev/Desktop/Avito/AAA/python/Home_work/Home_work_7/test_what_is_year_now.py --cov=what_is_year_now --cov-report html --cov-report term-missing
+
